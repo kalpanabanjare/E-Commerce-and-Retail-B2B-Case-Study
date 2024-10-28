@@ -16,8 +16,10 @@ Schuster faces issues with vendors who frequently delay payments, resulting in f
 ## Data Sources
 This project utilizes two primary datasets:
 
-**Received Payment Data:** Contains historical data on transactions made with various vendors, including details like payment term, payment date, invoice amount, and due date. This data will be used to create and train the prediction model.
-**Open Invoice Data:**  Contains information about current open invoices where payments are pending. This dataset will be used to test and apply the model in predicting potential late payments.
+ **Received Payment Data:** Contains historical data on transactions made with various vendors, including details like payment term, payment date, invoice amount, and due    
+ date. This data will be used to create and train the prediction model.
+ 
+ **Open Invoice Data:**  Contains information about current open invoices where payments are pending. This dataset will be used to test and apply the model in predicting potential late payments.
 
 The data dictionary provides details about the columns in both datasets.
 
@@ -34,8 +36,11 @@ The data dictionary provides details about the columns in both datasets.
 
 ### 3. Customer Segmentation
 - Segment vendors based on historical payment patterns using clustering techniques, particularly focusing on:
-  **Average Payment Time:** The average delay (or promptness) in days.
-  **Standard Deviation of Payment Time:**  Variability in the payment delay.
+
+   **Average Payment Time:** The average delay (or promptness) in days.
+  
+   **Standard Deviation of Payment Time:**  Variability in the payment delay.
+  
 - Use clustering to classify vendors into groups that exhibit similar payment behaviors. These clusters serve as an input feature for the classification model.
 
 ### 4. Model Building 
